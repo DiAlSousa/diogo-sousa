@@ -1,0 +1,452 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /*background-color: rgb(0, 0, 0);*/
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-weight: lighter;
+    align-items: stretch;
+    height: 2200px; /* Used to enable scrolling */
+    background: linear-gradient(180deg, #000000 15%, #7c7c7c 51%, #000000 85%);
+}   
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-weight: bolder;
+    color: white;
+}
+
+.crl{
+    clear: both;
+}
+
+/*EDIÇÃO CABEÇALHO*/
+
+h1 {
+    /*font-size: 1.5em;*/
+    font-weight: lighter;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    /*font-size: 1.5em;*/
+    font-weight: lighter;
+    font-weight: bolder;
+    color: white;
+}
+
+h3 {
+    /*font-size: 1.5em;*/
+    font-weight: lighter;
+    font-weight: bolder;
+}
+
+h4 {
+    /*font-size: 1.5em;*/
+    font-weight: lighter;
+    font-weight: bolder;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    border: black;
+    align-items: center;
+}
+
+.impressoes {
+    color: rgb(255, 255, 255);
+    width: 0%;
+    flex: auto;
+    text-align: right;
+    margin-top: 22px;
+}
+
+.obra {
+    color: rgb(255, 255, 255);
+    width: 0%;
+    flex: auto;
+    text-align: right;
+    margin-top: 22px;
+}
+
+.sobredrop {
+
+    color: rgb(255, 255, 255);
+    width: 0%;
+    flex: auto;
+    text-align: right;
+}
+
+.inicio {
+    color: rgb(255, 255, 255);
+    width: 0%;
+    flex: auto;
+    text-align: right;
+    margin-top: 22px;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 95%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background-color: #000000;
+    align-content: center;
+}
+  
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #ffffff;
+    width: 0%;
+}
+
+.logo {
+    margin-top: 23px;
+    margin-right: 0px;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+.img_fundo {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+.img_ypertalo1 {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.vid_tecnica1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*FINAL EDIÇÃO CABEÇALHO*/
+/*HOVER CABEÇALHO*/
+
+a:hover {
+    color: #333333;
+}
+
+/*FINAL HOVER CABEÇALHO*/
+/*FINAL EDIÇÃO CABEÇALHO*/
+
+/*INICIO INTRODUÇÃO*/
+
+
+
+/*FINAL INTRODUÇÃO*/
+
+/*INICIO FOOTER*/
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/*FIM FOOTER*/
+
+
+
+
+/*EDIÇÃO DROPDOWN TESTE*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sobredrop {
+    position: relative;
+    width: 55px;
+    margin: 2%;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+
+.work_btn {
+    transition: transform 0.6s ease-in-out 0s;
+}
+
+.teste:hover .work_btn {
+    transform: rotate(135deg);
+    transform: translatex(1000px);
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.teste_drop {
+    position: absolute;
+    opacity: 0;
+    min-width: 50px;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0, 2);
+    padding: 10px 16px;
+    z-index: 1;
+    background-color: rgb(129, 129, 129);
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 1s ease-in-out 0s, transform 0.5s ease-in-out;
+}
+
+.sobredrop:hover .teste_drop {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+    pointer-events: auto;
+}
+
+/*FIM EDIÇÃO DROPDOWN TESTE*/
+
+----------------------
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.coluna1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.coluna2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.coluna3 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+  /* Clear floats after image containers */
+/*.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}*/
+
+.row {
+    display: flex;
+}
+  
+.coluna1 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.row2 {
+    display: flex;
+}
+
+.coluna2 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.row3 {
+    display: flex;
+}
+
+.coluna3 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: rgb(47, 47, 47); /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      transition: all .8s ease-in-out;  
+}
+
+img:hover {
+    filter: none;
+      -webkit-box-flex: grayscale(0);
+      transform: scale(1.01);
+}
+
+.coluna1 {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.coluna2 {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+
+.coluna3 {
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+}
+  
+.conteudoimg {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(255, 255, 255); /* Fallback color */
+    background: rgba(255, 255, 255, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 94%; /* Full width */
+    padding: 10px; /* Some padding */
+}
+
+.conteudoimg:hover {
+    filter: none;
+      -webkit-box-flex: grayscale(0);
+      transform: scale(1.01);
+}
+
+/*FIM CORPO SITE - FOTOGRAFIAS*/
+
+----------
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+  
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(180deg, #000000 15%, #000000 51%);
+    color: white;
+}
+  
+.container {
+    padding: 0 16px;
+}
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.button:hover {
+    background-color: #555;
+}
+  
+@media screen and (max-width: 650px) {
+.column {
+      width: 100%;
+      display: block;
+}
+}
+
+
+
+.redes_sociais {
+    display: flex;
+}
+
+.instagram {
+    margin-left: 45%;
+    margin-right: auto;
+    width: 10%;
+}
+
+.facebook {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.linkedin {
+    margin-left: auto;
+    margin-right: 45%;
+    width: 10%;
+}
+
+
+
+.redes_sociais1 {
+    display: flex;
+}
+
+.instagram1 {
+    margin-left: 25%;
+    margin-right: auto;
+    width: 10%;
+}
+
+.instagram_matheus {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.facebook1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.linkedin1 {
+    margin-left: auto;
+    margin-right: 25%;
+    width: 10%;
+}
